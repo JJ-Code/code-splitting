@@ -1,8 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react'
+import logo from "../logo.svg";
+
+const Page3 = ({ onRouteChange }) => {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +18,14 @@ function App() {
         >
           Learn React
         </a>
+
+        <button onClick={() => onRouteChange('page1')}>Page1</button>
+        <button onClick={() => onRouteChange('page2')}>Page2</button>
+        <button className="disabled" onClick={() => onRouteChange('page2')}>Page2</button>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+
+export default Page3
