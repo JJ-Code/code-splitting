@@ -19,6 +19,7 @@ const App = () => {
     //no code splitting
     //setPageId({ route: route })
     console.log(route);
+    console.log(route);
     //code splitting
     if (route === 'page1') {
       setPageId({ route: route })
